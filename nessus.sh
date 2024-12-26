@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run -itd --name=vhae04_nessus -p 8834:8834 vhae044/nessus
+docker run -itd --name=nessus -p 8834:8834 vhae044/nessus
 
 wget https://github.com/VHAE04/nessus_oneclick/raw/main/admin.zip
 
