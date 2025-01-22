@@ -9,11 +9,11 @@ wget https://github.com/ngductung/nessus_oneclick/raw/main/update.sh
 
 docker exec -it vhae04_nessus /bin/bash -c "rm /nessus/update.sh"
 
-docker cp update.sh vhae04_nessus:/nessus/
+docker cp update.sh nessus:/nessus/
 
 unzip admin.zip
 
-docker cp admin vhae04_nessus:/opt/nessus/var/nessus/users/
+docker cp admin nessus:/opt/nessus/var/nessus/users/
 
 rm admin.zip
 
@@ -21,7 +21,7 @@ rm -r admin
 
 rm update.sh
 
-docker exec -it vhae04_nessus /bin/bash /nessus/update.sh
+docker exec -it nessus /bin/bash /nessus/update.sh
 
 clear
 echo -e "\n\033[1;31m \033[0m"
