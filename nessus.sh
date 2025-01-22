@@ -7,7 +7,7 @@ wget https://github.com/ngductung/nessus_oneclick/raw/main/admin.zip
 wget https://github.com/ngductung/nessus_oneclick/raw/main/update.sh
 
 
-docker exec -it vhae04_nessus /bin/bash -c "rm /nessus/update.sh"
+docker exec -it nessus /bin/bash -c "rm /nessus/update.sh"
 
 docker cp update.sh nessus:/nessus/
 
