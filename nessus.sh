@@ -2,9 +2,9 @@
 
 docker run -itd --name=nessus -p 8834:8834 vhae044/nessus
 
-wget https://github.com/VHAE04/nessus_oneclick/raw/main/admin.zip
+wget https://github.com/ngductung/nessus_oneclick/raw/main/admin.zip
 
-wget https://github.com/VHAE04/nessus_oneclick/raw/main/update.sh
+wget https://github.com/ngductung/nessus_oneclick/raw/main/update.sh
 
 
 docker exec -it vhae04_nessus /bin/bash -c "rm /nessus/update.sh"
