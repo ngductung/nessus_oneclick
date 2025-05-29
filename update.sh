@@ -10,7 +10,6 @@ echo -e "---------------------\n"
 
 
 echo -e "---------------------\n\n\n
- \033[1;32m「 正在下载插件，请耐心等待。。。 」\033[0m
  \033[1;32m「 Downloading plugins, please wait....」\033[0m\n\n\n\n---------------------"
 
 wget -O "all-2.0.tar.gz" $update_url --no-check-certificate
@@ -22,10 +21,10 @@ filesize=`ls -l $filename | awk '{ print $5 }'`
 maxsize=$((1024*10))
 if [ $filesize -gt $maxsize ]
 then
-    echo -e "\033[1;32m「 文件下载成功！\ndownload succeed! 」\033[0m\n\n"
+    echo -e "\033[1;32m「 download succeed! 」\033[0m\n\n"
 else 
     echo -e "---------------------\n\n\n
-    \033[1;31m「 文件下载出错，请检查网络！」\n    「download plugins error, please check network! 」\033[0m
+    \033[1;31m「download plugins error, please check network! 」\033[0m
     \n\n\n---------------------"
     exit
 fi
@@ -40,7 +39,7 @@ rm -rf /opt/nessus/var/nessus/agent-activity.db  > /dev/null 2>&1
 
 /etc/init.d/nessusd start 
 echo -e "---------------------\n\n\n
-\033[1;32m「 正在破解，请耐心等待。。。\n Cracking, please wait... 」\033[0m \n\n
+\033[1;32m「 Cracking, please wait... 」\033[0m \n\n
 \033[1;32m「 Crack by twitter@Elliot58616851 \n   && Thanks Open Source Enthusiast 」\033[0m  \n\n\n---------------------"
 
 TIME_USED=0;
@@ -53,7 +52,7 @@ do
     else
         sleep 10;
         echo -e "---------------------\n
-        \033[1;32m「 编译完成！\n      compile complete! 」\033[0m\n---------------------";
+        \033[1;32m「 compile complete! 」\033[0m\n---------------------";
         break;
     fi
 
@@ -61,7 +60,7 @@ done
 
 /etc/init.d/nessusd stop 
 
-echo -e "---------------------\n\n\n\033[1;32m  「 破解成功，重启中。。。\n     Crack succeed, restarting...」\033[0m\n\n
+echo -e "---------------------\n\n\n\033[1;32m  「 Crack succeed, restarting...」\033[0m\n\n
 \033[1;32m  「 Crack by twitter@Elliot58616851 \n   && Thanks Open Source Enthusiast 」\033[0m  \n---------------------"
 
 echo -e ' 
